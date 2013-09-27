@@ -1,0 +1,21 @@
+# only exported things work in test scripts
+
+export abs_top_srcdir abs_top_builddir abs_srcdir abs_builddir
+export AWK="@AWK@"
+
+if ! ${at_clean} ; then
+	export SB_UID=$(./get-user)
+	export SB_GID=$(./get-group)
+fi
+
+export at_xfail
+
+# portage likes to do `addpredict /` ... we dont need/want
+# that garbage messing up our env
+export SANDBOX_PREDICT=${SANDBOX_PREDICT%:/}
+
+if [ "${AUTOTEST_PATH}" = "tests" ] ; then
+	AUTOTEST_PATH="src:tests"
+fi
+
+export SANDBOX_VERBOSE=0

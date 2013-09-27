@@ -1,0 +1,9 @@
+AT_INIT
+AT_COLOR_TESTS
+
+m4_defun([sb_inc],[dnl
+m4_defun([SB_SECTION],[$1])
+m4_include([]SB_SECTION[.at])
+])
+
+m4_include([testsuite.list.at])

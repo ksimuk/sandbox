@@ -1,0 +1,7 @@
+#!/bin/sh
+# make sure we catch openat with relative path
+[ "${at_xfail}" = "yes" ] && exit 77 # see trace-0
+
+adddeny "${PWD}"
+remove-0 -1 f
+test -e sandbox.log
