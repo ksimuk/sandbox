@@ -13,7 +13,7 @@ command=""
 for arg in "$@"
 do
     # Escape single quotes
-    val=$(echo "$arg" | sed -e "s/'/'\"'\"'/g")
+    val=$(printf "%s" "$arg" | sed -e "s/'/'\"'\"'/g")
     # Wrap into single quotes and escape
     val=$(printf "%q" "'$val'")
     # Append to the other commands
