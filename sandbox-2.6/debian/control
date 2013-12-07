@@ -1,0 +1,15 @@
+Source: sandbox
+Section: misc
+Priority: extra
+Maintainer: maximka <maxim.kraev@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, gawk
+Standards-Version: 3.9.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/sandbox.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/sandbox.git;a=summary
+
+Package: sandbox
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A helper utility to run programs in a sandboxed environment
+ A helper utility to run programs in a sandboxed environment

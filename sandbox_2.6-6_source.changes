@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 06 Dec 2013 13:00:50 +0000
+Source: sandbox
+Binary: sandbox
+Architecture: source
+Version: 2.6-6
+Distribution: precise
+Urgency: low
+Maintainer: maximka <maxim.kraev@gmail.com>
+Changed-By: Maxim Kraev <maxim.kraev@gmail.com>
+Description: 
+ sandbox    - A helper utility to run programs in a sandboxed environment
+Changes: 
+ sandbox (2.6-6) precise; urgency=low
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1: 
+ d2be7a4cef42c0cdcda941939e4171765746b117 1105 sandbox_2.6-6.dsc
+ 30c29700a01d12556fa68e9469921c508ed3bf81 6137132 sandbox_2.6.orig.tar.gz
+ d364879223f825718081881cbdb8fccd0d27507b 27725 sandbox_2.6-6.debian.tar.gz
+Checksums-Sha256: 
+ 9ca7aeb1742f821cbf410a91c8dafc73adac87f06769b908cb14b671958d6c9f 1105 sandbox_2.6-6.dsc
+ 807816e343dc1ee16b1603e0ca13889508f0c7f746b46692eccd332ba27a87c3 6137132 sandbox_2.6.orig.tar.gz
+ 0611c2f815481dd872af24079452cdd99037dddb4a167904bfb514bfcffb505c 27725 sandbox_2.6-6.debian.tar.gz
+Files: 
+ 37f0297b59658f332748d8c81dc7ab14 1105 misc extra sandbox_2.6-6.dsc
+ 3705df79db3ff519762b4e47963f21d7 6137132 misc extra sandbox_2.6.orig.tar.gz
+ d111bebaf71d39e670372488967ff177 27725 misc extra sandbox_2.6-6.debian.tar.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.14 (GNU/Linux)
+
+iF4EAREIAAYFAlKiHRwACgkQnJWXBKqO2SpbKwEApX9es6epkz4KJAShEdIb/aVK
+DyVr7aL3UeSQNAKhGz8BALCQrk3YWdfML6GbrCXFoq2ATtRZ5vwWRu8p+pDJq97y
+=8HRk
+-----END PGP SIGNATURE-----

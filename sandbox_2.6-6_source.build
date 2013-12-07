@@ -1,0 +1,160 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S
+dpkg-buildpackage: source package sandbox
+dpkg-buildpackage: source version 2.6-6
+dpkg-buildpackage: source changed by Maxim Kraev <maxim.kraev@gmail.com>
+ dpkg-source --before-build sandbox-2.6
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b sandbox-2.6
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building sandbox using existing ./sandbox_2.6.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file config.status
+dpkg-source: warning: ignoring deletion of file stamp-h1
+dpkg-source: warning: ignoring deletion of file config.log
+dpkg-source: warning: ignoring deletion of file libpch.la
+dpkg-source: warning: ignoring deletion of file libtool
+dpkg-source: warning: ignoring deletion of file headers.h.gch.o
+dpkg-source: warning: ignoring deletion of file Makefile
+dpkg-source: warning: ignoring deletion of file headers.h.gch
+dpkg-source: warning: ignoring deletion of file config.h
+dpkg-source: warning: ignoring deletion of directory autom4te.cache
+dpkg-source: warning: ignoring deletion of file autom4te.cache/output.0
+dpkg-source: warning: ignoring deletion of file autom4te.cache/requests
+dpkg-source: warning: ignoring deletion of file autom4te.cache/output.1
+dpkg-source: warning: ignoring deletion of file autom4te.cache/traces.1
+dpkg-source: warning: ignoring deletion of file autom4te.cache/traces.0
+dpkg-source: warning: ignoring deletion of file etc/Makefile
+dpkg-source: warning: ignoring deletion of file etc/sandbox.d/00default
+dpkg-source: warning: ignoring deletion of file etc/sandbox.d/Makefile
+dpkg-source: warning: ignoring deletion of file src/environ.o
+dpkg-source: warning: ignoring deletion of file src/sandbox
+dpkg-source: warning: ignoring deletion of file src/Makefile
+dpkg-source: warning: ignoring deletion of file src/sandbox.o
+dpkg-source: warning: ignoring deletion of file src/sandbox.sh
+dpkg-source: warning: ignoring deletion of directory src/.libs
+dpkg-source: warning: ignoring deletion of file data/Makefile
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox_la-trace.lo
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox.la
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox_la-memory.lo
+dpkg-source: warning: ignoring deletion of file libsandbox/trace_syscalls.h
+dpkg-source: warning: ignoring deletion of file libsandbox/sb_nr.h
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox.map
+dpkg-source: warning: ignoring deletion of file libsandbox/Makefile
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox_la-lock.lo
+dpkg-source: warning: ignoring deletion of file libsandbox/headers.h.gch
+dpkg-source: warning: ignoring deletion of file libsandbox/symbols.h
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox_la-canonicalize.lo
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox_la-wrappers.lo
+dpkg-source: warning: ignoring deletion of file libsandbox/headers.h.gch.lo
+dpkg-source: warning: ignoring deletion of file libsandbox/libsandbox_la-libsandbox.lo
+dpkg-source: warning: ignoring deletion of directory libsandbox/.libs
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox.so
+dpkg-source: warning: ignoring deletion of symlink libsandbox/.libs/libsandbox.la
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox_la-memory.o
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox_la-lock.o
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/headers.h.gch.o
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox_la-trace.o
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox.lai
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox_la-libsandbox.o
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox_la-canonicalize.o
+dpkg-source: warning: ignoring deletion of file libsandbox/.libs/libsandbox_la-wrappers.o
+dpkg-source: warning: ignoring deletion of file tests/Makefile
+dpkg-source: warning: ignoring deletion of file tests/atlocal
+dpkg-source: warning: ignoring deletion of file tests/atconfig
+dpkg-source: warning: ignoring deletion of file tests/package.m4
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_memory.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_backtrace.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_write.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/is_env_on.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/string.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_open.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/is_env_off.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/get_sandbox_lib.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/file.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/get_tmp_dir.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/debug.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_proc.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_efuncs.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_printf.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/Makefile
+dpkg-source: warning: ignoring deletion of file libsbutil/headers.h.gch
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_write_fd.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/get_sandbox_confd.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/get_sandbox_log.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/get_sandbox_rc.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_close.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/dynbuf.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/config.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/headers.h.gch.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/sb_read.lo
+dpkg-source: warning: ignoring deletion of file libsbutil/libsbutil.la
+dpkg-source: warning: ignoring deletion of file libsbutil/get_sandbox_conf.lo
+dpkg-source: warning: ignoring deletion of directory libsbutil/.libs
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/file.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_open.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/get_sandbox_rc.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/string.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_printf.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/libsbutil.a
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/get_tmp_dir.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/get_sandbox_log.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/dynbuf.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/is_env_off.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/headers.h.gch.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_read.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_backtrace.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_efuncs.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_write.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_write_fd.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_memory.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/config.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/get_sandbox_confd.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/is_env_on.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/get_sandbox_conf.o
+dpkg-source: warning: ignoring deletion of symlink libsbutil/.libs/libsbutil.la
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/debug.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/get_sandbox_lib.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_proc.o
+dpkg-source: warning: ignoring deletion of file libsbutil/.libs/sb_close.o
+dpkg-source: warning: ignoring deletion of directory .libs
+dpkg-source: warning: ignoring deletion of symlink .libs/libpch.la
+dpkg-source: warning: ignoring deletion of file .libs/libpch.a
+dpkg-source: warning: ignoring deletion of file scripts/Makefile
+dpkg-source: info: building sandbox in sandbox_2.6-6.debian.tar.gz
+dpkg-source: info: building sandbox in sandbox_2.6-6.dsc
+ dpkg-genchanges -S >../sandbox_2.6-6_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build sandbox-2.6
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: sandbox source: configure-generated-file-in-source config.log
+W: sandbox source: configure-generated-file-in-source config.status
+W: sandbox source: dh-make-template-in-source debian/emacsen-install.ex
+W: sandbox source: dh-make-template-in-source debian/emacsen-remove.ex
+W: sandbox source: dh-make-template-in-source debian/emacsen-startup.ex
+W: sandbox source: dh-make-template-in-source debian/init.d.ex
+W: sandbox source: dh-make-template-in-source debian/manpage.1.ex
+W: sandbox source: dh-make-template-in-source debian/manpage.sgml.ex
+W: sandbox source: dh-make-template-in-source debian/manpage.xml.ex
+W: sandbox source: dh-make-template-in-source debian/menu.ex
+W: sandbox source: dh-make-template-in-source debian/postinst.ex
+W: sandbox source: dh-make-template-in-source debian/postrm.ex
+W: sandbox source: dh-make-template-in-source debian/preinst.ex
+W: sandbox source: dh-make-template-in-source debian/prerm.ex
+W: sandbox source: dh-make-template-in-source debian/sandbox.cron.d.ex
+W: sandbox source: dh-make-template-in-source debian/sandbox.default.ex
+W: sandbox source: dh-make-template-in-source debian/sandbox.doc-base.EX
+W: sandbox source: dh-make-template-in-source debian/watch.ex
+W: sandbox source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: sandbox source: bad-homepage <insert the upstream URL, if relevant>
+W: sandbox source: ancient-standards-version 3.9.2 (current is 3.9.4)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile sandbox_2.6-6.dsc Maxim Kraev <maxim.kraev@gmail.com>
+
+ signfile sandbox_2.6-6_source.changes Maxim Kraev <maxim.kraev@gmail.com>
+
+Successfully signed dsc and changes files

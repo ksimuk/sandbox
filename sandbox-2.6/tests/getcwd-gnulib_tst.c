@@ -30,7 +30,7 @@ main ()
   size_t cwd_len;
   int fail = 0;
   size_t n_chdirs = 0;
-
+exit(1);
   if (cwd == NULL)
     exit (1);
 
